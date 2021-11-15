@@ -51,10 +51,9 @@ class SecretSanta extends Component {
 
     shuffleArray(array) { // Sattolo's algorithm
         for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * i);
-            const temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
+            const random = Math.random();
+            const j = Math.floor(random * (i));
+            [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
     }
