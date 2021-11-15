@@ -13,7 +13,7 @@ class AddPerson extends Component {
         return (
             <div className="form-wrap">
                 <form autoComplete="off" onSubmit={this.handleAddPersonChild} id="name-form" className="form">
-                    <input type="text" name="name" className="input" placeholder="Enter a name..."/>
+                    <input type="text" name="name" className="input" placeholder="Ingresar nombre..."/>
                     <button type="submit" className="add">
                         <img src={plus} className="add-icon" alt="plus-icon"/>
                         Add

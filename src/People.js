@@ -27,7 +27,7 @@ class People extends Component {
                             copyText={this.props.copyText}
                         /> // pass down name
                     )
-                    : <p className="empty-message">Add a person to get started!</p>
+                    : <p className="empty-message">Añade personas para comenzar!</p>
                 }
                 
             </div>

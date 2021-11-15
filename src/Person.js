@@ -30,7 +30,7 @@ class Person extends Component {
                 {
                     (this.props.renderRemove === true)
                     ? <button className="person__remove" onClick={(e) => {this.props.handleDeletePerson(this.props.person)}}>
-                        Remove
+                        Eliminar
                     </button>
                     : <CopyToClipboard text={window.location.origin.toString() + "/?name=" + this.props.person.split(" ").join("%20") + "&key=" + this.props.encryptString(this.props.santa)}
                         onCopy={() => this.setState({copied: true})}>

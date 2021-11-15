@@ -5,7 +5,7 @@ const Generate = (props) => {
     return (
         <button className="generate-button" onClick={props.handleGenerate}>
             <img src={santahat} className="santa-icon" alt="santa-icon" />
-            Generate Secret Santa
+            Generar sorteo
         </button>
     )
 }
