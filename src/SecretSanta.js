@@ -25,6 +25,7 @@ class SecretSanta extends Component {
 
     encryptString(string) {
         const key = process.env.REACT_APP_ENCRYPT_KEY
+        const hidenKey = cipher.update
         return aes.encrypt(string, key)
     }
 
